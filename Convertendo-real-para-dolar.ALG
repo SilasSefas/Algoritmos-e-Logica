@@ -1,13 +1,20 @@
 algoritmo "Conertendo dolar em real"
+
+
 var
-   Dolar, brl, conv : real
+   C , Q: Inteiro
+   Dolar, brl, conv  : real
 inicio
-      Dolar <- 5.64
-      escreval("Convertendo Real Para Dolar")
-      escreval("O dolar hoje esta valendo R$", Dolar)
-      escreval("Quantos Reais você deseja trocar por Dolar ? ")
+   C <- 1
+   Escreva("Quantas vezes quer converter? ")
+   Leia(Q)
+   Enquanto (C <= Q) faca
+      Dolar <- 5
+      escrevaL("Convertendo Real Para Dolar")
+      escreva("Quantos Reais você deseja trocar por Dolar ? ")
       leia(brl)
       conv <- brl/dolar
-      escreva("R$ ",brl, " Convertido em Dolar é igual a U$", conv, "Dolar(es)")
-      
+      escrevaL("R$ ",brl, " Convertido em Dolar é igual a U$", conv, "Dolar(es)")
+      C <- C + 1
+   FimEnquanto
 fimalgoritmo
