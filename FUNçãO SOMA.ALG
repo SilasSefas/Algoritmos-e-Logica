@@ -1,19 +1,22 @@
 algoritmo "Função Soma"
 var
-N1, N2, Res : inteiro
+   N1, N2, Res : inteiro
 
-Funcao soma(A,B : Inteiro): Inteiro
+Funcao soma( A,B : Inteiro): Inteiro
 Var
-S : Inteiro
+   S : Inteiro
 Inicio
-S <- A+ B
-Retorne S
+   S <- A+ B
+   Retorne S
 FimFuncao
 
 inicio
-N1 <- 5
-N2 <- 4
-Res <- Soma(N1,N2)
-    EscrevaL("A Soma Vale ", Res)
+   Escreva("Digite Um Valor: ")
+   Leia(N1)
+   Escreva("Digite Um Valor: ")
+   Leia(N2)
+
+   Res <- Soma(N1,N2)
+   EscrevaL("A Soma Vale ", Res)
 
 fimalgoritmo
